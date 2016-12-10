@@ -1,7 +1,7 @@
 #pseudocode for inventoryapp
 
 
-Imports ( Gui shit, xls shit, email shit)
+Imports ( Sys, file IO,  Gui shit, xls shit, email shit(mime, smtp )
 
 GUI -> User input - Email + data
 
