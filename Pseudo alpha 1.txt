@@ -1,6 +1,9 @@
 #pseudocode for inventoryapp
 
-GUI -> User input 
+
+Imports ( Gui shit, xls shit, email shit)
+
+GUI -> User input - Email + data
 
 Store in dictionary - temp
 
@@ -16,6 +19,6 @@ for dictionary - >
 		for key in dictionary
 			write row, col, key
 			row +1
-
+				
 			
-		
+send email with invname + xls 		
