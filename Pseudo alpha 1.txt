@@ -23,4 +23,13 @@ for dictionary - >
 			
 send email with invname + xls 	
 	Build email with mime?
+	msg.to (user email)
+		msg = inv (day)
+		msg.attach (xls)
+		
 	send email via smtp? 
+		s.smtplib(email sever)
+		send(client email)
+		
+    	 
+       
