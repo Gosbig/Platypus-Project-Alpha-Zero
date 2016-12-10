@@ -21,4 +21,6 @@ for dictionary - >
 			row +1
 				
 			
-send email with invname + xls 		
+send email with invname + xls 	
+	Build email with mime?
+	send email via smtp? 
