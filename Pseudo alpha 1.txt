@@ -1,0 +1,21 @@
+#pseudocode for inventoryapp
+
+GUI -> User input 
+
+Store in dictionary - temp
+
+Userinput of item (ie apples) 'apples' - float 5.0
+userinput of item (flour) 'flour lbs' - float 2.5
+Create inventory (dictionary)
+Create value - > 
+Edit value -> 
+Edit key ->
+
+for dictionary - > 
+	create worksheet in xls per inventory (ie Kitchen, Dining Room, Garage)
+		for key in dictionary
+			write row, col, key
+			row +1
+
+			
+		
