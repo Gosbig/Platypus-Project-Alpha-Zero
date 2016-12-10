@@ -3,6 +3,10 @@
 
 Imports ( Sys, file IO,  Gui shit, xls shit, email shit(mime, smtp )
 
+*this is the gui wrapper shit basically*
+from tkinter import *
+root = Tk()
+
 GUI -> User input - Email + data
 
 Store in dictionary - temp
@@ -31,5 +35,7 @@ send email with invname + xls
 		s.smtplib(email sever)
 		send(client email)
 		
+*This says keep the window open indefinitely, don't just open it run it and close it.*
+root.mainloop()
     	 
        
