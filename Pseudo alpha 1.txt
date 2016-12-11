@@ -37,8 +37,3 @@ send email with invname + xls
 		
 *This says keep the window open indefinitely, don't just open it run it and close it.*
 root.mainloop()
-    	 
-team = whatever your team name is...
-
-print "your team is %r" % (team)
-
