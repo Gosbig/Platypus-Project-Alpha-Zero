@@ -1,0 +1,26 @@
+Class user.input:
+    # takes user input via gui and puts it into a dictionary for each seperate inventory (ie Spices, Produce, Baking)
+    gui / user interface -  (inventory, item , amount)
+    dictionary(inventory)    
+        item: amount
+        item2: amount
+        
+Class Converter:
+    # takes user input as dictionary and creates and writes a XLS file with name of inventories + data
+    dictionary inventory 1 (baking)
+    dictionary inventory 2 (spices)
+    
+    Write to xls file (name = day) where page = inventory(name of dictionary ()
+    row = item (key)
+    collumn1 = amount(value)
+    collumn2? (time of last change)
+    
+Class Email:
+    # sets up and sends a simple email with attached XLS document 
+    Calls Converter and writes said XLS as attachment to email
+    email content has time and date sent, also any other relevant info from User Input - IE comments 
+    
+    
+User input stored as dictionary as user is putting in information.
+When done with action or app is closed - Save as converted XLS File + Text file with notes for day/session
+When user prompts or on Clock IE 12 AM - send said XLS file + Daily notes to Email provided in User.input 
