@@ -2,43 +2,49 @@
 #import scv
 from tkinter import *
 
+
 #from email import email_user
 #from converter import csv_converter
 
+
+
 class main():
+
 
     def __init__(self, master):
         frame = Frame(master)
         frame.pack()
 
-        self.new_list_Button = Button(frame, text="Start new list >", command=self.newList)
-        self.new_list_Button.grid(row=0, column=0)
+        self.newListBut = Button(frame, text="New List", command=NewList)
+        self.newListBut.pack(side=LEFT)
 
-        self.edit_list_Button = Button(frame, text="Edit list >", command=self.editList)
-        self.edit_list_Button.grid(row=1, column=0)
+        self.editList = Button(frame, text="Edit List")
+        self.editList.pack(side=LEFT)
 
-        self.delete_list_Button = Button(frame, text="Delete list >", command=self.deleteList)
-        self.delete_list_Button.grid(row=2, column=0)
-
-    def newList(self):
-
-        def newDict():
-            nd = {input}
-            nd.Pack(root)
-
-        title = Button(root, text="New List")
-        title.pack()
+        self.delList = Button(frame, text="Delete List")
+        self.delList.pack(side=LEFT)
 
 
 
-    def editList(self):
-        print ("Place holder text for edit List")
+class NewList():
 
-    def deleteList(self):
-        print ("Place holder text for delete List")
+    def newitem(self):
+        print(strVar.get())
 
 
 root = Tk()
-platypusProjectMain = main(root)
+strVar = StringVar()
+
+strEntry = Entry(root, textvariable=strVar)
+strEntry.pack(side=LEFT)
+
+entButton = Button(root, text="Enter")
+entButton.bind("<Button-1", )
+entButton.pack()
+
+infoLabel = Label(root, text=strEntry)
+infoLabel.pack()
+
+PlatyApp = main(root)
 root.mainloop()
 
